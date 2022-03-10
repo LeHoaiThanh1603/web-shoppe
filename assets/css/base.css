@@ -1,0 +1,72 @@
+/* khai báo biến css */
+:root {
+    --white-color: #fff ;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:#F6412D;
+    --border-color: #dbdbdb;
+   
+
+}
+/*appline thuộc tính css lên all phần tử html nhúng base.css */
+* {
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family:  Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal__body{
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    
+}
+/* button style */
+
+
+.btn {
+    height: 36px;
+    min-width: 90px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+
+
+
